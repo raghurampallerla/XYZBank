@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": ".",  // This will include everything in the project, including both tests and pages
+    "baseUrl": ".",  // This helps resolve relative imports
+    "paths": {
+      "*": ["node_modules/*", "pages/*"]
+    }
+  },
+  "include": [
+    "tests/**/*.ts",
+    "pages/**/*.ts"  // Ensure both the tests and pages directories are included
+  ],
+  "exclude": ["node_modules"]
+}
